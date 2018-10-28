@@ -1,0 +1,9 @@
+WeChatConfig:
+  appid: wxe6fc5545c928af37
+  appSecret: d08c3d7171d03e88c84303f5f375ba84
+  redirect_uri: http://aayang.free.idcfengye.com/wechat/chatCallBack
+server:
+  port: 8090
+
+
+
