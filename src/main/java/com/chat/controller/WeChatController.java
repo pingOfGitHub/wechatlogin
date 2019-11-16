@@ -39,8 +39,8 @@ public class WeChatController {
         // appid=APPID&secret=SECRET&code=CODE&grant_type=authorization_code
         StringBuilder getToken=new StringBuilder("https://api.weixin.qq.com/sns/oauth2/access_token?");
         getToken.append("appid=").append(weChatConfig.getAppid())
-                .append("&secret").append(weChatConfig.getAppSecret())
-                .append("&code").append(code)
+                .append("&secret=").append(weChatConfig.getAppSecret())
+                .append("&code=").append(code)
                 .append("&grant_type=authorization_code");
         String tokenData = UrlUtils.loadURL(getToken.toString());
         Map<String,String> map = JSONObject.parseObject(tokenData, Map.class);
